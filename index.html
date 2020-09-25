@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #darkmode {
+            background: black;
+            color: rgb(240, 240, 240);
+        }
+
+        body {
+
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            padding: 10px;
+            margin-right: 10%;
+            margin-left: 10%;
+            background-color: #fff;
+        }
+
+        #darkmode .container {
+            padding: 10px;
+            margin-right: 10%;
+            margin-left: 10%;
+            background-color: rgb(22, 22, 22);
+        }
+
+        h1,
+        h5 {
+            margin: 20px 0;
+        }
+    </style>
+
+    <title>Dark Mode</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Dark Mode</h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, enim. Quidem architecto ipsum tenetur,
+            fugit
+            veritatis officiis delectus sunt sed omnis qui error assumenda autem veniam harum, magnam unde eius.Lorem
+            ipsum dolor sit, amet consectetur adipisicing elit. Debitis, enim. Quidem architecto ipsum tenetur,
+            fugit
+            veritatis officiis delectus sunt sed omnis qui error assumenda autem veniam harum, magnam unde eius.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptates libero qui ea esse atque
+            enim
+            aut nobis molestias mollitia natus necessitatibus ducimus non, eligendi delectus sit suscipit dolorum
+            impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptates libero qui ea esse
+            atque
+            enim
+            aut nobis molestias mollitia natus necessitatibus ducimus non, eligendi delectus sit suscipit dolorum
+            impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptates libero qui ea esse
+            atque
+            enim
+            aut nobis molestias mollitia natus necessitatibus ducimus non, eligendi delectus sit suscipit dolorum
+            impedit.
+        </p>
+
+
+        <h5>Mode :</h5>
+        <button onclick="setDarkMode(false);">Light</button>
+        <button onclick="setDarkMode(true);">Dark</button>
+
+    </div>
+
+    <script type="text/javascript">
+        // cek preferensi theme di localstorage
+        if (localStorage.getItem('theme') == 'dark') {
+            setDarkMode(true);
+        }
+
+        function setDarkMode(isDark) {
+            if (isDark) {
+                document.body.setAttribute('id', 'darkmode');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.body.setAttribute('id', '');
+                localStorage.removeItem('theme');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
