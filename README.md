@@ -1,6 +1,6 @@
-# simple-darkmode
+# Simple Darkmode Website
 
-simple darkmode website with html, css and javascript
+Simple darkmode website with html, css and javascript.
 
 
 ## Light Mode
