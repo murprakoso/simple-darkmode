@@ -1,7 +1,6 @@
-# Simple Darkmode Website
+# Simple Darkmode Website With Button
 
 Simple darkmode website with html, css and javascript.
-
 
 ## Light Mode
 
