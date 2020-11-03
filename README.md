@@ -1,4 +1,4 @@
-# Simple Darkmode Website
+# Simple Darkmode Website With Checkbox
 
 Simple darkmode website with html, css and javascript.
 With checkbox bootstrap.
